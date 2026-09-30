@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - ONG Esperança</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ONG Esperança</h1>
+
+        <nav>
+            <a href="index.html#inicio">Início</a>
+            <a href="index.html#projetos">Projetos</a>
+            <a href="index.html#cadastro">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Nossos Projetos</h2>
+
+        <section>
+            <h3>Educação para todos</h3>
+
+            <p>
+                Oferecemos atividades educativas e apoio escolar
+                para crianças e adolescentes da comunidade.
+            </p>
+        </section>
+
+        <section>
+            <h3>Campanha de alimentos</h3>
+
+            <p>
+                Realizamos arrecadações e distribuímos alimentos
+                para famílias em situação de vulnerabilidade.
+            </p>
+        </section>
+
+        <section>
+            <h3>Ações comunitárias</h3>
+
+            <p>
+                Promovemos ações sociais, culturais e comunitárias
+                para fortalecer a união e a solidariedade.
+            </p>
+        </section>
+<section class="feedback">
+    <h2>Informações dos projetos</h2>
+
+    <div class="projeto-card">
+        <span class="badge">Projeto ativo</span>
+
+        <h3>Educação para todos</h3>
+
+        <p>
+            Este projeto está recebendo voluntários.
+        </p>
+
+        <button type="button" onclick="mostrarToast()">
+            Quero ajudar
+        </button>
+    </div>
+
+    <div class="alerta">
+        <strong>Informação:</strong>
+        Novas oportunidades de voluntariado estão disponíveis.
+    </div>
+</section>
+
+<div id="toast" class="toast">
+    Obrigada pelo seu interesse em ajudar! 💜
+</div>
+
+<script>
+function mostrarToast() {
+    const toast = document.getElementById("toast");
+
+    toast.classList.add("mostrar");
+
+    setTimeout(function() {
+        toast.classList.remove("mostrar");
+    }, 3000);
+}
+</script>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ONG Esperança - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
